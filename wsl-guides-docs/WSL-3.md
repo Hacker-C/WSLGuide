@@ -60,7 +60,7 @@ vim ~/.zshrc
 ```
 > ❗ WSL(Ubuntu) 默认安装了 vim，其他若未安装则使用指令 `sudo apt-get install vim` 安装或使用 `vi` 进行编辑。
 
-进入 `.zshrc` 后修改 `ZSH_THEME` 为指定主题即可。
+进入 `.zshrc` 后修改 `ZSH_THEME` 为指定主题。然后退出，记得使用 `source ~/.zshrc` 更新一下缓存。
 > ❌ 注意：`ZSH_THEME=`与主题名之间没有空格！！！
 
 推荐一些个人觉得好看的主题：robbyrussell,agnoster,muse,af-magic",rkj-repos
@@ -85,7 +85,7 @@ echo $RANDOM_THEME
 ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 ```
 
-更多相关请关注：[WSL专栏](http://localhost:4000/categories/WSL/)
+更多相关请关注：[WSL专栏](http://mphy.gitee.io/categories/WSL/)
 
 **❗ 法律声明**
 

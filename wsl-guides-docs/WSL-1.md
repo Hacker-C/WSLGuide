@@ -45,7 +45,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 [Microsoft MSL docs](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10#troubleshooting)
 [Windows Subsystem Linux Installation Guide For Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-更多相关请关注：[WSL专栏](http://localhost:4000/categories/WSL/)
+更多相关请关注：[WSL专栏](http://mphy.gitee.io/categories/WSL/)
 
 **❗ 法律声明**
 

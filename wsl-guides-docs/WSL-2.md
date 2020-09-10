@@ -6,7 +6,7 @@ categories: WSL
 ---
 # 1. 前言
 之所以要先安装 Windows Terminal，是因为在配置 oh-my-zsh 主题的时候，要进行一些操作，比如修改WSL字体、修改背景透明度、设置背景图片、设置默认打开路径等等，而 Terminal 的配置文件让这些操作都变得十分简单。
-
+<!--more-->
 # 2. 安装 Windows Terminal
 直接在 MSC Store(微软商店)平台下载安装即可，是免费的。
 
@@ -129,7 +129,7 @@ Github下载慢的可以下载我上传至百度网盘的Meslo字体文件:
 # 4. 参考链接
 [MCS Windows Terminal](https://docs.microsoft.com/zh-cn/windows/terminal/)
 
-更多相关请关注：[WSL专栏](http://localhost:4000/categories/WSL/)
+更多相关请关注：[WSL专栏](http://mphy.gitee.io/categories/WSL/)
 
 **❗ 法律声明**
 
