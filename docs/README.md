@@ -13,4 +13,4 @@
 + WSL-6
   配置Git公钥
 + WSL-7
-  nodejs 环境配
+  nodejs 环境配置
