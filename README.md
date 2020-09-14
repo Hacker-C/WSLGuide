@@ -20,6 +20,8 @@
   配置Git公钥
 + WSL-7
   nodejs 环境配置
++ WSL-8
+  Java/Python/C/C++ 编程环境配置
 
 ### Themes
 
