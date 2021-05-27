@@ -16,3 +16,5 @@
   nodejs 环境配置
 + WSL-8
   Java/Python/C/C++ 编程环境配置
++ WSL-9
+  修改 npm 全局安装位置

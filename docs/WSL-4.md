@@ -3,15 +3,20 @@ title: 玩转WSL(4)之vim常用命令和基本配置
 date: 2020-08-24 15:26:49
 tags: WSL
 categories: WSL
+index_img: https://s3.ax1x.com/2021/02/14/ysagaT.jpg
 ---
+
 # 前言
-既然已经使用了命令行 WSL 进行编程开发了，那么就免不了要认识一下 Vim 这个命令行编辑器了。况且之前以及后面我们都要对 `~/.zshrc`(zsh配置文件)、`~/.vimrc`(vim配置文件)、`~/.p10k.zsh`(powerlevel10k主题配置文件)等进行编辑，所以而为了更好的配置基础开发环境，也需要学会 vim。
+
+既然已经使用了命令行 WSL 进行编程开发了，那么就免不了要认识一下 Vim 这个命令行编辑器了。况且之前以及后面我们都要对 `~/.zshrc`(zsh 配置文件)、`~/.vimrc`(vim 配置文件)、`~/.p10k.zsh`(powerlevel10k 主题配置文件)等进行编辑，所以而为了更好的配置基础开发环境，也需要学会 vim。
+
 <!--more-->
-# 1. 安装vim
+
+# 1. 安装 vim
 
 WSL(Ubuntu) 默认内置 vim。其他 WSL 版本若未安装则使用指令 `sudo apt-get install vim` 安装即可。
 
-# 2. vim三大模式及常用指令
+# 2. vim 三大模式及常用指令
 
 > 只介绍常用指令，跟全面的可以在网上搜索到。
 
@@ -20,7 +25,7 @@ WSL(Ubuntu) 默认内置 vim。其他 WSL 版本若未安装则使用指令 `sud
 使用 vim 刚进入要编辑的文件时，就处于命令模式。若处于其他模式，则使用 `Esc` 进入命令模式。
 在此模式下：
 ① 按 `i`(insert) 进入输入模式，键盘输入内容；
-② 按 `u`撤回上次修改，已经保存并且退出vim的则不能再撤回；
+② 按 `u`撤回上次修改，已经保存并且退出 vim 的则不能再撤回；
 ③ 按 `v`(visual)进入可视模式，从当前光标位置移动到目标位的内容置，使用 `y`(copy)复制这段内容，使用 `p`(paste)粘贴；
 ④ 按 `J`(大写)合并光标所在行和下一行内容；
 ⑤ 按 `x` 删除当前光标所在位置的字符；
@@ -37,29 +42,29 @@ WSL(Ubuntu) 默认内置 vim。其他 WSL 版本若未安装则使用指令 `sud
 
 在命令模式下按 `i` (insert)则进入键盘输入模式，可在文件内输入内容。
 
-> ✅ TIP：在  Windows Terminal 下的 vim模式，是允许使用 windows 的快捷键 `Ctrl + C/V` 的。
+> ✅ TIP：在 Windows Terminal 下的 vim 模式，是允许使用 windows 的快捷键 `Ctrl + C/V` 的。
 
 ## 2.3 编辑模式
 
 在命令模式下输入 `:` 则进入编辑模式，可编辑文件：删除、复制、保存、保存并退出等。
 
-① `:x!` 保存并退出vim;
-① `:w` 保存文件不退出vim；
-② `:wq` 保存文件并且退出vim；
+① `:x!` 保存并退出 vim;
+① `:w` 保存文件不退出 vim；
+② `:wq` 保存文件并且退出 vim；
 ④ `:w filename` 另存为 filename 文件；
-③ `:q` 不保存并退出vim(若对文件改动但未保存则指令`q`失效)；
-④ `:q!` 不保存并且退出vim；
-① `ZZ` 直接退出vim；
-⑤ `/`：按 `/` 进入搜索，在后面输入目标内容(如destination)，然后回车；
+③ `:q` 不保存并退出 vim(若对文件改动但未保存则指令`q`失效)；
+④ `:q!` 不保存并且退出 vim；
+① `ZZ` 直接退出 vim；
+⑤ `/`：按 `/` 进入搜索，在后面输入目标内容(如 destination)，然后回车；
 ⑥ `:l1,l2d`：删除第 l1 行到第 l2 行的全部内容；
-⑦ `:12`：输入数字，然后回车，光标跳到指定行(12行)
+⑦ `:12`：输入数字，然后回车，光标跳到指定行(12 行)
 
-# 3. vim基本配置
+# 3. vim 基本配置
 
 WSL 的 vim 配置文件一般都是 `~/.vimrc`，若没有的话则新建一个 `.vimrc` 文件，完整位置和文件名是 `~/.vimrc`。
 `.vimrc` 的注释方式是双引号 `"` 后加注释内容。
 
-## 3.1 设置vim配置立刻生效
+## 3.1 设置 vim 配置立刻生效
 
 ```bash
 "保存文件配置内容后立刻生效
@@ -113,9 +118,9 @@ set autoindent
 set paste
 ```
 
-> 在Vim中通过鼠标右键粘贴时会在行首多出许多缩进和空格，通过set paste可以在插入模式下粘贴内容时不会有任何格式变形、胡乱缩进等问题。
+> 在 Vim 中通过鼠标右键粘贴时会在行首多出许多缩进和空格，通过 set paste 可以在插入模式下粘贴内容时不会有任何格式变形、胡乱缩进等问题。
 
-## 3.8 显示空格和tab
+## 3.8 显示空格和 tab
 
 ```
 set listchars=tab:>-,trail:-
@@ -130,18 +135,12 @@ set laststatus=2
 set ruler
 ```
 
-# 4. vim主题配置
+# 4. vim 主题配置
 
 > 暂未更新...
 
 # 参考链接
 
-[Vim教程网](https://vimjc.com/vimrc-config.html)
+[Vim 教程网](https://vimjc.com/vimrc-config.html)
 
-更多相关请关注：[WSL专栏](http://mphy.gitee.io/categories/WSL/)
-
-**❗ 法律声明**
-
-> 本文作者：[Murphy Chen](https://www.zhihu.com/people/ai-xiao-xi-19)
-> 本文链接：http://mphy.gitee.io/WSL-4（转载注明源链接）
-> 版权声明：本博客作品除特别声明外，均为原创，遵循 **署名-非商业性使用-禁止演绎 4.0 未本地化版本 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)** 协议发布
+更多相关请关注：[WSL 专栏](http://mphy.gitee.io/categories/WSL/)
