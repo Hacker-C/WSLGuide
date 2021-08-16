@@ -1,7 +1,7 @@
 # A Guide about Windows SubSystem Linux   
 
 > Tell you how to make a excellent terminal!  
-> Here is the blog for WSL: http://mphy.top/categories/WSL 
+> Here is the blog for WSL: http://blog/mphy.top/categories/WSL 
 
 
 ### Docs
